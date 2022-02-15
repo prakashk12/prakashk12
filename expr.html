@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="Testimonial">
+        
+            <div class="Testitem">
+             <img id ="photo" src="images/_DSC9273.jpg">
+             <h4>PALLE GOPI KRISHNA</h4>
+         <img  id="invertedcomma"src="Images/84-844027_double-quotation-marks-beg-double-inverted-commas-png.png">
+         
+         <p>This is a good website for the women to have different latest brands of clothes</p>
+         <img src="Images/closing inverted commas.jpg">
+            
+            </div>       
+             
+            <div class="Testitem">
+             <img id ="photo" src="images/SnapChatmenu.jpg">
+             <h4>PALLE GOPI KRISHNA</h4>
+         <img  id="invertedcomma"src="Images/84-844027_double-quotation-marks-beg-double-inverted-commas-png.png">
+         
+             <p>I love the clothes from this website!! I am so glad I found them.....everything has been spot on, fits wonderfully, styles are trendy and lots to choose from!! Thanks for being here for us!!!</p>
+     
+            </div>
+            <div class="Testitem">
+             <img id ="photo" src="images/Sample profilepic.png">
+             <h4>PALLE GOPI KRISHNA</h4>
+         <img  id="invertedcomma"src="Images/84-844027_double-quotation-marks-beg-double-inverted-commas-png.png">
+             <p>OMG..great store !!! Found this store while visiting the UK.. what a find -nice clothing/well made/great prices. I never find anything I Iike in US plus size stores but I could have filled another suitcase in Yours* Will be shopping on this site from now on... please come to the US !!!
+             </p>
+     
+            </div>
+           
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+     
+         </div>
+     
+         <script>
+             var slideIndex = 1;
+             showSlides(slideIndex);
+             
+             function plusSlides(n) {
+               showSlides(slideIndex += n);
+             }
+             
+             function currentSlide(n) {
+               showSlides(slideIndex = n);
+             }
+             
+             function showSlides(n) {
+               var i;
+               var slides = document.getElementsByClassName("Tstitem");
+               var dots = document.getElementsByClassName("dot");
+               if (n > slides.length) {slideIndex = 1}    
+               if (n < 1) {slideIndex = slides.length}
+               for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";  
+               }
+               for (i = 0; i < dots.length; i++) {
+                   dots[i].className = dots[i].className.replace("active", "");
+               }
+               slides[slideIndex-1].style.display = "block";  
+               dots[slideIndex-1].className += " active";
+             }
+             </script>
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>

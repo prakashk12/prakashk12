@@ -41,7 +41,7 @@ transition: 0.5sec;
     background:#e91e63;
 }
 .section1{
-    min-height:100vh;
+    min-height:70vh;
     display:flex;
     justify-content: center;
     align-items:center;
@@ -65,20 +65,21 @@ transition: 0.5sec;
     display:flex;
     justify-content: center;
     align-items:center;
-    font-size:5em;
+    font-size:1em;
     text-transform: uppercase;
     font-weight: 100px;
     color:red;
+    padding-bottom: 50px;
 }
 .section4{
     min-height:100vh;
     display:flex;
     justify-content: center;
     align-items:center;
-    font-size:5em;
-    text-transform: uppercase;
-    font-weight: 100px;
-    color:red;
+    font-size:1em;
+  
+    
+ 
 }
 .section5{
     min-height:100vh;
@@ -102,7 +103,7 @@ transition: 0.5sec;
 }
 section:nth-child(odd)
 {
-    background-color: #2c3e50;
+    background-color:rgb(250, 248, 249);
 }
 section:nth-child(even){
     background-color:bisque;
@@ -115,3 +116,233 @@ section:nth-child(even){
 .icons :hover{
     transform: scaleX(0.5);
 }
+/*catogories*/
+.grid-container {
+    display: grid;
+    grid-gap: 70px 10px;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 10px;  
+  }  
+  .grid-item {
+    background-color: rgb(158, 148, 130); 
+    font-size: 30px;
+    text-align: center;
+    height: 300px;
+    width: 200px;
+  }
+ 
+  .txt{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.box{
+  border: 1px;
+  padding: 10px;
+  background-color:red;
+  display: block;
+
+}
+/*
+.box:hover{
+  transform: scale(0.9);
+}
+*/
+
+.grid-item1 img{
+  height: 600px;
+  width: 550px;
+   margin-left: 280px;
+  
+  /*box-shadow: 0px 5px 15px 5px;*/
+}
+
+.text1{
+  float: right;
+  margin-top: 100px;
+  padding-right: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  
+}
+.text2{
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+.txt1{
+  float: right; 
+  cursor: pointer;
+}
+.btn{
+  padding: 20px;
+
+  cursor: pointer;
+  color:white;
+  background-color: black;
+  padding: 15px 32px;
+  text-align: center;
+  border: none;
+}
+.btn:hover{
+  color:black;
+  background-color: white;
+}
+.material-icons:hover{
+  color:red;
+}
+.no {
+  padding: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  color:black;
+  
+}
+.no:hover{
+  color:black;
+  background-color: pink;
+  
+}
+
+.main-container{
+ position :relative;
+}
+
+
+
+.grid-container2 img:hover{
+  transform:scale(1.2)
+}
+
+.grid-container2 {
+  position:absolute;
+  display: grid;
+  grid-template-columns: auto ;
+  grid-gap: 10px;
+  
+}
+
+.grid-container2  div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px ;
+  text-align: center;
+  font-size: 30px;
+  height: 300px;
+  width: 200px;
+  
+}
+
+/* testimonial alignment*/
+.Testimonial{
+  position:relative; 
+  border:1px solid black;
+  width:90%;
+  height:fit-content;
+  background-color:rgb(235, 217, 227);
+  display:inline-grid;
+  grid-template-columns:auto auto auto ;
+  column-gap:2px;
+  left:50px;
+  padding-left:20px;
+  padding-bottom:30px;
+  
+}
+
+.Testitem{
+  position:relative;
+  cursor: pointer;
+  margin:20px;
+  width:300px;
+height:350px;
+background-color: rgb(224, 224, 235);
+border: 1px solid rgb(31, 139, 139);
+padding:20px;
+border-radius: 40px;
+}
+#invertedcomma{
+  position:absolute;
+  top:120px;
+  left:10px;
+}
+.Testitem p{
+  position:absolute;
+  top:40%;
+}
+
+.Testitem h4{
+  position:absolute;
+  top:15px;
+  left:80px;
+}
+#photo{
+  border-radius: 30px;
+  margin-left: 0px;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: rgb(204, 63, 63);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  position: absolute;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #b96363;
+}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
