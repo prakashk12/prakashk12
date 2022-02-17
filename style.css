@@ -9,6 +9,7 @@ html,body{
     background: #2c3e50;
     padding: 20px 226px;
     position: fixed;
+    z-index: 999;
 }
 .menu ul{
     margin:0px;
@@ -61,15 +62,18 @@ transition: 0.5sec;
     color:red;
 }
 .section3{
-    min-height:100vh;
+    min-height: 100vh;
+    width:100%;
     display:flex;
     justify-content: center;
     align-items:center;
     font-size:1em;
-    text-transform: uppercase;
+    
     font-weight: 100px;
-    color:red;
-    padding-bottom: 50px;
+    color:black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
 }
 .section4{
     min-height:100vh;
@@ -77,6 +81,7 @@ transition: 0.5sec;
     justify-content: center;
     align-items:center;
     font-size:1em;
+    
   
     
  
@@ -119,7 +124,7 @@ section:nth-child(even){
 /*catogories*/
 .grid-container {
     display: grid;
-    grid-gap: 70px 10px;
+    grid-gap: 70px 80px;
     grid-template-columns: auto auto auto auto auto;
     background-color: antiquewhite;
     padding: 10px;
@@ -336,7 +341,7 @@ border-radius: 40px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  
 }
 
 /* Add a background color to the active dot/circle */
@@ -346,3 +351,103 @@ border-radius: 40px;
 
 /* Add a blue color to the author */
 .author {color: cornflowerblue;}
+
+/*experiment 1*/
+
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: rgb(207, 165, 165);
+  
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 25%;
+  justify-content: center;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(241, 231, 231);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(173, 164, 164);
+  padding: 20px;
+  margin-top: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.container{
+  position:relative;
+  max-width: 1170px;
+  background-color: rgb(14, 13, 13);
+  margin:auto;
+}
+.Footer{
+  background-color: rgb(15, 14, 15);
+  padding:50px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.row{
+display:flex ;
+}
+ul{
+  position:relative;
+  list-style-type:none;
+  line-height:180%;
+  left:-40px;
+
+}
+.footer-col{
+  width:25%;
+  padding:0 10px;
+}
+.footer-col h4{
+  font-size: 18px;
+  text-transform: capitalize;
+  position:relative;
+  color:rgb(227, 227, 233)
+}
+.footer-col h4::before{
+  content:'';
+  position:absolute;
+  bottom:-10px;
+  height:2px;
+  width:100px;
+  background-color: red;
+
+}
+.copyright p{
+  position:absolute;
+  margin:0;
+  padding:0;
+  background-color: rgb(97, 78, 78);
+  left:100px;    
+}
+.footer-col li{
+  color:white;
+}
