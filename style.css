@@ -451,3 +451,7 @@ ul{
 .footer-col li{
   color:white;
 }
+.footer-col a :hover{
+  transform: scaley(1.4);
+
+}
