@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="grid-container2">
+            <div ><img src="/Images/kurti1.jfif" height="200" width="100" onclick="this.src=''" ></div>
+            <div><img src="/Images/kurti2.jfif" height="200" width="100"> </div>
+            <div><img src="/Images/kurti3.jfif" height="200" width="100" ></div>  
+            <div><img src="/Images/kurti4.jfif" height="200" width="100" ></div>
+          </div>
+              <div class="grid-item1">
+             <div class="container">
+                
+                <img class="image" src="/images/kurti.jfif" >
+                <div class="lens"></div>
+                <div class="result"></div>
+                </div>
+        
+            <div class="txt1">
+              <p class="text1"> HOME  > WOMEN ACCESSORIES > KURTIS</p> 
+              <p class="text2" >KURTI <br>$ 150.0</p>  
+              
+              <p> This is the image of kurti.</p> 
+             <!--<div>
+                <input class ="input" type="number" id ="myNumber" value=" ">
+                <button id ="plus" onclick="plus()"><img src="images/plus.png"></button>
+                <button id="minus" onclick="minus()"><img src="images/minus.png"></button>
+            </div>!-->
+            
+             <p class="text3" ><i class="fa-fa-heart"></i>  ADD TO WISHLIST
+                   ADD TO COMPARE </p>
+                  <i onclick="redcolor(this)" class="fa-fa-heart"></i> 
+                  <input type ="submit" id=""value="Add to Cart"> 
+                  <input type= "radio" value = "">
+                
+              </div>
+            </div>
+        </div>
+        <script>
+            function plus(){      
+            document.getElementById("myNumber").stepUp();  
+            }
+        
+     
+     function minus(){
+                var a = document.getElementById("myNumber").value;  
+                if(a>0){
+                      document.getElementById("myNumber").stepDown();        
+            }
+         }    
+         function redcolor(x){
+            x.classList.toggle("");
+         }
+         
+         </script>
+         <script src="index2.js"></script>
+</body>
+</html>

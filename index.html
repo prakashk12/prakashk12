@@ -4,206 +4,198 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-       <div class="menu">
-       <ul>
-       <li><a href="#Home">Home</a></li>
-       <li><a href="#About US">About Us</a></li>
-       <li><a href="#Catogories">Catogories</a></li>
-       <li><a href="#Testimonials">Testimonials</a></li>
-       <li><a href="#FAQS">FAQS</a></li>
-       <li><a href="#Blogs">Blogs</a></li>
-       <div class="icons">
-       <i class="fa-solid fa-user" style="color:white"></i>&nbsp;&nbsp;
-          
-            <i class="fa-solid fa-cart-shopping" style="color:white"></i>&nbsp;&nbsp; 
-            <i class="fa-solid fa-heart" style="color:white"></i>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About US">About Us</a></li>
+            <li><a href="#Catogories">Catogories</a></li>
+            <li><a href="#Testimonials">Testimonials</a></li>
+            <li><a href="#FAQS">FAQS</a></li>
+            <li><a href="#Blogs">Blogs</a></li>
+            <div class="icons">
+                <div class="user">
+                    <i id="user-dropdown" class="fa-solid fa-user" style="color:white"></i>
+                    <div class="user-content">
+                        <a href="#">Login/Sign Up</a>
+                        <a href="#">My Orders</a>
+                        <a href="#">Help</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Logout</a>
+
+
+                    </div>
+                </div>
+                <div id="menu-cart"><i class="fa-solid fa-cart-shopping" style="color:white"></i> </div>
+                <div id="menu-wishlist"> <i class="fa-solid fa-heart" style="color:white"></i></div>
             </div>
-    </ul>
-</div>
-        <section id="Home" class="section1">welcome to our page
-            <img src="images/2.jpg">
-        </section>
-        <section id="About US"class="section2">
-            <h3>we are here to help you</h3>
-        </section>
-        <section id="Catogories"class="section3">
-      <h1></h1>
+        </ul>
+    </div>
+    <section id="Home" class="section1">welcome to our page
+        <img src="images/2.jpg">
+    </section>
+    <section id="About US" class="section2">
+        <h3>we are here to help you</h3>
+    </section>
+    <section id="Catogories" class="section3">
+        <div class="top-heading">
+            <h1>BIGGEST DEALS ON TOP BRANDS</h1>
 
-    <div class="grid-container">
-          <div class="grid-item"> 
-  <a href="page1.html"> 
-       <img src="/images/kurti.jfif" height="300" width="200"></a>
-    
-              <p class="txt">Kurtis</p> </div>
-        <div class="grid-item">
-            <img src="/images/kurtaset.jfif" height="300" width="200">
+        </div>
+
+        <div class="grid-container" id="cat">
             
-              <p class="txt">Kurta Set</p></div>
-        <div class="grid-item">
-            <img src="/images/anarkali.jfif" height="300" width="200" > 
-            <p class="txt">Anarkali</p></div>  
-        <div class="grid-item">
-            <img src="/images/dress material.jfif" height="300" width="200"> 
-            <p class="txt">Dress Material</p></div>
-        <div class="grid-item">
-            <img src="/images/scarf.jfif"height="300" width="200" > 
-            <p class="txt">Scarf</p></div>
-        <div class="grid-item">
-            <img src="/images/plazo.jpg"height="300" width="200" > 
-            <p class="txt">Plazo</p></div>  
-        <div class="grid-item">
-            <img src="/images/plazoset.jfif"height="300" width="200" > 
-            <p class="txt">Plazoset</p></div>
-        <div class="grid-item">
-            <img src="/images/sarees.jfif" height="300" width="200"> 
-            <p class="txt">Sarees</p></div>
-        <div class="grid-item">
-            <img src="/images/sharara.jfif" height="300" width="200"> 
-            <p class="txt">Sharara</p></div>
-        <div class="grid-item">
-            <img src="/images/lehenga.jfif"height="300" width="200" > 
-            <p class="txt">Lehenga</p></div>  
-      
-        
-      </div>
-     </section>
-        <section id="Testimonials" class="section4">
-            <div class="Testimonial">
-        
-                <div class="Testitem">
-                 <img id ="photo" src="images/_DSC9273.jpg">
-                 <h4>PALLE GOPI KRISHNA</h4>
-             
-             
-             <p>This is a good website for the women to have different latest brands of clothes</p>
-             
-                
-                </div>       
-                 
-                <div class="Testitem">
-                 <img id ="photo" src="images/SnapChatmenu.jpg">
-                 <h4>PALLE GOPI KRISHNA</h4>
-             
-                 <p>I love the clothes from this website!! I am so glad I found them.....everything has been spot on, fits wonderfully, styles are trendy and lots to choose from!! Thanks for being here for us!!!</p>
-         
-                </div>
-                <div class="Testitem">
-                 <img id ="photo" src="images/Sample profilepic.png">
-                 <h4>PALLE GOPI KRISHNA</h4>
-                 <p>OMG..great store !!! Found this store while visiting the UK.. what a find -nice clothing/well made/great prices. I never find anything I Iike in US plus size stores but I could have filled another suitcase in Yours* Will be shopping on this site from now on... please come to the US !!!
-                 </p>
-         
-                </div>
-               
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-                
-         
-             </div>
-         
-             <script>
-                 var slideIndex = 1;
-                 showSlides(slideIndex);
-                 
-                 function plusSlides(n) {
-                   showSlides(slideIndex += n);
-                 }
-                 
-                 function currentSlide(n) {
-                   showSlides(slideIndex = n);
-                 }
-                 
-                 function showSlides(n) {
-                   var i;
-                   var slides = document.getElementsByClassName("Tstitem");
-                   var dots = document.getElementsByClassName("dot");
-                   if (n > slides.length) {slideIndex = 1}    
-                   if (n < 1) {slideIndex = slides.length}
-                   for (i = 0; i < slides.length; i++) {
-                       slides[i].style.display = "none";  
-                   }
-                   for (i = 0; i < dots.length; i++) {
-                       dots[i].className = dots[i].className.replace("active", "");
-                   }
-                   slides[slideIndex-1].style.display = "block";  
-                   dots[slideIndex-1].className += " active";
-                 }
-                 </script>
-    
-        </section>
-        
-        <section id="FAQS" class="section5">ASK ANY QUESTIONS</section>
-        <section id="Blogs" class="section6">
-            Blog
-         
-        </section>
-        <body>
+        </div>
+    </section>
+    <section id="Testimonials" class="section4">
+        <div class="Testimonial">
 
-            <footer class="Footer">
-           <div class ="container">
-               <div class ="row">
-                  <div class="footer-col">
-                      <h4>Company</h4>
-                      <ul>
-                          <li>
-                              <a href="#">About us<a></li>
-                          </li>
-                          <li><a href="#">Our services</a></li>
-                          <li><a href="#">Privacy policy</a></li>
-                          <li><a href="#">Affiliate program</a></li>
-                      </ul>
-                  </div>
-                  <div class="footer-col">
+            <div class="Testitem">
+                <img id="photo" src="images/_DSC9273.jpg">
+                <h4>PALLE GOPI KRISHNA</h4>
+
+
+                <p>This is a good website for the women to have different latest brands of clothes</p>
+
+
+            </div>
+
+            <div class="Testitem">
+                <img id="photo" src="images/SnapChatmenu.jpg">
+                <h4>PALLE GOPI KRISHNA</h4>
+
+                <p>I love the clothes from this website!! I am so glad I found them.....everything has been spot on,
+                    fits wonderfully, styles are trendy and lots to choose from!! Thanks for being here for us!!!</p>
+
+            </div>
+            <div class="Testitem">
+                <img id="photo" src="images/Sample profilepic.png">
+                <h4>PALLE GOPI KRISHNA</h4>
+                <p>OMG..great store !!! Found this store while visiting the UK.. what a find -nice clothing/well
+                    made/great prices. I never find anything I Iike in US plus size stores but I could have filled
+                    another suitcase in Yours* Will be shopping on this site from now on... please come to the US !!!
+                </p>
+
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("Tstitem");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace("active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+    </section>
+
+    <section id="FAQS" class="section5">ASK ANY QUESTIONS</section>
+    <section id="Blogs" class="section6">
+
+    </section>
+
+
+    <footer class="Footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li> <a href="#">About us<a></li>
+
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
                     <h4>Get help</h4>
                     <ul>
-                        <li><a href="#">FAQ<a></li>
-                        <li><a href="#">Shipping<a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
                         <li><a href="#">Returns<a></li>
-                        <li><a href="#">Order status<a></li>
-                        <li><a href="#">Payment options<a></li>
+                        <li><a href="#">Order status</a></li>
+                        <li><a href="#"></a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Online Shop</h4>
                     <ul>
-                        <li><a href="#">New arrivals</a></li>
+                        <li><a href="index.html">shop here</a></li>
                     </ul>
+
                 </div>
                 <div class="footer-col">
                     <h4>Follow us</h4>
                     <div>
                         <a href=""><i class="fa-brands fa-facebook" style="color:white"></i></a>
                         <a href=""><i class="fab fa-instagram" style="color:white "></i></a>
-                        <a href=""><i class="fab fa-twitter" style="color:white"></i></a> 
+                        <a href=""><i class="fab fa-twitter" style="color:white"></i></a>
+
                     </div>
                     <div>
                         <h4>Contact us</h4>
-                        <a href=""><i class="fa-brands fa-facebook" style="color: white;"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=+919014942759" target="_blank"> <i
+                                class="fa-brands fa-whatsapp" style="color:white"></i></a>
+
                         <p style="color:white">Address:<br>4-7/8 IT Tower,Bypass Road, Karimnagar-505001 </p>
                     </div>
                 </div>
-               </div>
-           </div >
-             <div class="copyright">
-               <hr>      
-             <a href="">Terms of Service </a></left>
-               <a href="">Privacy Policy</a>  &nbsp; &nbsp; &nbsp; &nbsp;
-                <right><a href="">sitemap</a></right>       
-            
             </div>
-            </footer>
-            
-        </body>
-        
-    </body>
+        </div>
+        <div class="copyright">
+            <hr>
+            <a href="">Terms of Service </a></left>
+            <a href="">Privacy Policy</a> &nbsp; &nbsp; &nbsp; &nbsp;
+            <right><a href="">sitemap</a></right>
+
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<script src="js/get_cat.js"></script>
+</body>
+
 </html>

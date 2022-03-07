@@ -5,11 +5,15 @@ html,body{
     
 }
 .menu{
-
+   /* opacity: 5%;*/
     background: #2c3e50;
-    padding: 20px 226px;
+    right:0;
+    left:0;
+    top: 0;
+    padding: 20px 0px;
     position: fixed;
     z-index: 999;
+    
 }
 .menu ul{
     margin:0px;
@@ -31,16 +35,81 @@ html,body{
     padding:15px 20px;
     display: inline-block;
     font-weight:700;
-transition: 0.5sec;
+
 
 }
-.menu ul li a.active{
-    background:#e91e63;
+.menu ul li a:hover{
+  color:rgb(78, 78, 161);
+}
 
+.icons{
+  padding:0px 0px;
+  display:grid;
+  grid-template-columns: auto auto auto;
+  float:right;
+  grid-gap: 50px;
+  
 }
-.menu ul li:hover{
+
+/*.icons{
+    float:right;
+    margin-right: 10px;
+    
+}*/
+
+/*.menu ul li:hover{
     background:#e91e63;
+}*/
+/* Dropdown Button */
+#user-dropdown {
+  background-color: #0f0f0f;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
 }
+
+/* The container <div> - needed to position the dropdown content */
+.user {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.user-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width:max-content;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.user-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.user-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.user:hover .user-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.user:hover #user-dropdown {background-color: #3e8e41;}
+
+#menu-cart{
+  margin-top:10px;
+}
+
+#menu-wishlist{
+  margin-top:10px;
+}
+
 .section1{
     min-height:70vh;
     display:flex;
@@ -68,13 +137,14 @@ transition: 0.5sec;
     justify-content: center;
     align-items:center;
     font-size:1em;
-    
+    position: relative;
     font-weight: 100px;
     color:black;
     padding-top: 100px;
     padding-bottom: 100px;
     
 }
+
 .section4{
     min-height:100vh;
     display:flex;
@@ -113,15 +183,16 @@ section:nth-child(odd)
 section:nth-child(even){
     background-color:bisque;
 }
-.icons{
-    float:right;
-    margin-right: 10px;
-    
-}
-.icons :hover{
-    transform: scaleX(0.5);
-}
+
+
 /*catogories*/
+
+
+.top-heading h1{
+  position: absolute;
+  top: 0;
+  left: 35%;
+}
 .grid-container {
     display: grid;
     grid-gap: 70px 80px;
@@ -157,12 +228,21 @@ section:nth-child(even){
 }
 */
 
+/*productsimages*/
+.grid-item1{
+  position:absolute;
+  width:400px;
+  height:800px;
+  border: 5px solid;
+  
+}
+
 .grid-item1 img{
   height: 600px;
   width: 550px;
    margin-left: 280px;
   
-  /*box-shadow: 0px 5px 15px 5px;*/
+  box-shadow: 0px 5px 15px 5px;
 }
 
 .text1{
@@ -179,7 +259,7 @@ section:nth-child(even){
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer;
 }
-.txt1{
+/*.txt1{
   float: right; 
   cursor: pointer;
 }
@@ -193,6 +273,7 @@ section:nth-child(even){
   text-align: center;
   border: none;
 }
+
 .btn:hover{
   color:black;
   background-color: white;
@@ -220,7 +301,6 @@ section:nth-child(even){
 }
 
 
-
 .grid-container2 img:hover{
   transform:scale(1.2)
 }
@@ -228,12 +308,12 @@ section:nth-child(even){
 .grid-container2 {
   position:absolute;
   display: grid;
-  grid-template-columns: auto ;
+  grid-template-columns: auto  ;
   grid-gap: 10px;
   
 }
 
-.grid-container2  div {
+.grid-container2 div {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px ;
   text-align: center;
@@ -242,6 +322,25 @@ section:nth-child(even){
   width: 200px;
   
 }
+/*productspagehtml*/
+.product-title{
+  
+  min-height:30vh;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  
+}
+.product-title h1{
+  margin-top: 100px;
+}
+/*productimagessection*/
+ #footer-prod-img{
+   position:absolute;
+   bottom:0;
+   left:0;
+   right:0;
+ }
 
 /* testimonial alignment*/
 .Testimonial{
@@ -352,43 +451,45 @@ border-radius: 40px;
 /* Add a blue color to the author */
 .author {color: cornflowerblue;}
 
-/*experiment 1*/
+/*blog*/
 
+
+* {
+  box-sizing: border-box;
+}
 .header {
   padding: 30px;
   font-size: 40px;
   text-align: center;
-  background: rgb(207, 165, 165);
-  
+  background: white;
 }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {
+.leftcolumn {   
   float: left;
-  width: 25%;
-  justify-content: center;
+  width: 75%;
 }
 
 /* Right column */
 .rightcolumn {
-  float: right;
+  float: left;
   width: 25%;
   padding-left: 20px;
 }
 
 /* Fake image */
 .fakeimg {
-  background-color: rgb(241, 231, 231);
-  width: 100%;
+  background-color: #aaa;
+  width: 3%;
   padding: 20px;
 }
 
 /* Add a card effect for articles */
 .card {
-  background-color: rgb(173, 164, 164);
-  padding: 20px;
-  margin-top: 10px;
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
 }
 
 /* Clear floats after the columns */
@@ -397,6 +498,23 @@ border-radius: 40px;
   display: table;
   clear: both;
 }
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
 
 /* Footer */
 .container{
@@ -410,6 +528,7 @@ border-radius: 40px;
   padding:50px 0;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
+  
 }
 
 .row{
@@ -430,7 +549,8 @@ ul{
   font-size: 18px;
   text-transform: capitalize;
   position:relative;
-  color:rgb(227, 227, 233)
+  color:rgb(227, 227, 233);
+  
 }
 .footer-col h4::before{
   content:'';
@@ -449,9 +569,23 @@ ul{
   left:100px;    
 }
 .footer-col li{
-  color:white;
+
+  font-size: 20px;
+  
+}
+.footer-col li a:hover{
+  color:blue;
+  
 }
 .footer-col i:hover{
   transform: scaley(1.4);
 
+
+}
+.footer-col a{
+  color: #aaa;
+  text-decoration: none;
+}
+.copyright a{
+  color:green;
 }
